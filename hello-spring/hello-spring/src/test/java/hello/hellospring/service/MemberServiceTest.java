@@ -26,6 +26,7 @@ class MemberServiceTest {
 		memberService = new MemberService(memberRepoistroy);
 	}
 	
+	
 	@AfterEach
 	public void afterEach() {
 		memberRepoistroy.cleatStore();

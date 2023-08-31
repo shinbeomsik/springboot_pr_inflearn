@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>hello</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Simple Shopping Mall</title>
 </head>
 <body>
-Hello
-<a href="/hello">hello</a>
+    <header>
+        <h1>Welcome to our Simple Shopping Mall</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="product-list">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$10.99</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$15.99</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <!-- Add more product elements here -->
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Simple Shopping Mall. All rights reserved.</p>
+    </footer>
 </body>
 </html>
